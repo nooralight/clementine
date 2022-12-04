@@ -13,7 +13,7 @@ import datetime as dt
 
 def api_response(msg):
     query = ("+".join(msg.split()))
-    source = urllib.request.urlopen('http://ec2-54-196-248-192.compute-1.amazonaws.com/?query='+query).read()
+    source = urllib.request.urlopen('http://ec2-44-201-111-213.compute-1.amazonaws.com/?query='+query).read()
     list_of_data = json.loads(source)
     return list_of_data['reply']
 
